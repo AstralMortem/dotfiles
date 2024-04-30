@@ -103,7 +103,7 @@ def get_weather_data():
     data = {}
 
     try:
-        weather = requests.get("https://wttr.in/%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BF%D1%96%D0%BB%D1%8C?format=j1", timeout=20).json()
+        weather = requests.get("https://wttr.in/Бориспіль?format=j1", timeout=20).json()
     except Exception:
         # Display error message if unable to retrieve weather information
         data["icon"] = "🪐"
