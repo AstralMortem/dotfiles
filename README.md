@@ -43,3 +43,9 @@ change lines
 
 
 ## Dotfiles
+`git clone https://github.com/AstralMortem/dotfiles.git`
+`cp -r .config .local ~/`
+`cp .face .fonts.conf .dmrc .gtkrc-2.0 ~/`
+`chmod -R +x ~/.config/desktop-scripts`
+`chmod +x ~/.config/hypr/autostart`
+`chmod -R +x ~/.config/wlogout/`
