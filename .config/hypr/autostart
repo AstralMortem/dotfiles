@@ -32,7 +32,6 @@ swaync &
 $scripts/launch_waybar &
 # $scripts/dynamic &
 
-
 # wallpaper
 $scripts/wall ~/.config/hypr/wallpapers/1.jpg &
 
