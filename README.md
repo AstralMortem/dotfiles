@@ -4,10 +4,10 @@
 ## DESKTOP Dependencies
 #### Pacman
 
-`sudo pacman -S hyprland xdg-desktop-portal-hyprland waybar kitty cava  polkit-gnome gnome-keyring wofi swaync swww starship playerctl pavucontrol btop qt5-base qt5-wayland qt6-base qt6-wayland lsd cliphist geany bat sddm --needed`
+`sudo pacman -S base-devel hyprland xdg-desktop-portal-hyprland waybar kitty cava polkit-gnome gnome-keyring wofi swaync swww starship playerctl pavucontrol btop qt5-base qt5-wayland qt6-base qt6-wayland lsd cliphist geany bat sddm jq blueman network-manager-applet wl-clipboard--needed`
 
 ### Yay
-`yay -S hyprpicker-git swaylock-effects wl-clipboard light nemo bulky boo-sddm boo-grub --needed`
+`yay -S hyprpicker-git libinput-gestures swaylock-effects light nemo bulky boo-sddm boo-grub system76-power --needed`
 
 ### Themes, Icons, Cursors
 `git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git & cd Tokyo-Night-GTK-Theme`
