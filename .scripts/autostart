@@ -17,7 +17,7 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 scripts=~/.scripts
 
 # gsettings
-gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Purple-Dark-Compact-Moon'
+gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Darl-BL-LB'
 gsettings set org.gnome.desktop.interface font-name 'CaskaydiaCove Nerd Font 9'
 gsettings set org.gnome.desktop.interface icon-theme 'Tokyonight-Moon'
 gsettings set org.gnome.desktop.interface cursor-theme 'Sweet-cursors'
@@ -34,7 +34,7 @@ $scripts/launch_waybar &
 
 # wallpaper
 hyprpaper &
-
+hypridle &
 
 # Applets
 blueman-applet &
