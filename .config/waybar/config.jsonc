@@ -220,7 +220,7 @@
             "custom/lock",
             "custom/reboot",
             "custom/power",
-            "custom/quit",
+            "custom/quit"
             
         ]
     },

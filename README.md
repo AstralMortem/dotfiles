@@ -82,7 +82,7 @@ cd ~/dotfiles
 cp -r .config .icons .local .scripts .themes .wallpapers ~/
 cp .face .fonts.conf .dmrc .gtkrc-2.0 ~/
 chmod -R +x ~/.scripts/
-chmod +x ~/.config/hypr/autostart
+chmod +x ~/.scripts/autostart
 chmod -R +x ~/.config/wlogout/
 ```
 
