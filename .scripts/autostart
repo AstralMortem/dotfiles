@@ -33,13 +33,10 @@ $scripts/launch_waybar &
 # $scripts/dynamic &
 
 # wallpaper
-$scripts/wall ~/.config/hypr/wallpapers/1.jpg &
+hyprpaper &
 
-# effects
-# $scripts/tools/rgb &
 
 # Applets
-$scripts/appindicator.py &
 blueman-applet &
 nm-applet --indicator &\
 
