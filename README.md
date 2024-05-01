@@ -24,5 +24,15 @@ cd yay
 makepkg -si
 ```
 
+## Install fish shell
+```
+sudo pacman -S fish
+chsh
+```
+
 ## Install Hyprland & Waybar
 
+Desktop depends
+```
+sudo pacman -S hyprland hyprpaper hyprlock hypridle
+```
