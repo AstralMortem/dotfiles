@@ -159,11 +159,11 @@ custom {
         windowrulev2 = animation popin, class:^(wlogout)$, title:^(wlogout)$
         windowrulev2 = float, class:^(wlogout)$, title:^(wlogout)$
 
-	windowrulev2 = workspace 4, class:^(.*Spotify.*)$
+	windowrule = workspace 4, ^(.*Spotify.*)$
 	windowrulev2 = workspace 3, class:^(Code)$
-	windowrulev2 = workspace 1, class:^(Google-chrome)$
-	windowrulev2 = workspace 2, class:^(kitty)$
-	windowrulev2 = workspace 5, float, class:^(org.telegram.desktop)$
+	windowrulev2 = workspace 2, class:^(Google-chrome)$
+	windowrulev2 = workspace 1, class:^(kitty)$
+	windowrulev2 = workspace 5, class:^(org.telegram.desktop)$
     }
 
 
@@ -234,15 +234,15 @@ custom {
         bind = SUPER, down, movefocus, d
 
         # Move To a workspaces
-        bind = SUPER, 1, exec, hyprctl dispatch workspace 1
-        bind = SUPER, 2, exec, hyprctl dispatch workspace 2
-        bind = SUPER, 3, exec, hyprctl dispatch workspace 3
-        bind = SUPER, 4, exec, hyprctl dispatch workspace 4
-        bind = SUPER, 5, exec, hyprctl dispatch workspace 5
-        bind = SUPER, 6, exec, hyprctl dispatch workspace 6
-        bind = SUPER, 7, exec, hyprctl dispatch workspace 7
-        bind = SUPER, 8, exec, hyprctl dispatch workspace 8
-        bind = SUPER, 9, exec, hyprctl dispatch workspace 9
+        bind = SUPER, 1, exec, ~/.scripts/hyprland_move_ws 1
+        bind = SUPER, 2, exec, ~/.scripts/hyprland_move_ws 2
+        bind = SUPER, 3, exec, ~/.scripts/hyprland_move_ws 3
+        bind = SUPER, 4, exec, ~/.scripts/hyprland_move_ws 4
+        bind = SUPER, 5, exec, ~/.scripts/hyprland_move_ws 5
+        bind = SUPER, 6, exec, ~/.scripts/hyprland_move_ws 6
+        bind = SUPER, 7, exec, ~/.scripts/hyprland_move_ws 7
+        bind = SUPER, 8, exec, ~/.scripts/hyprland_move_ws 8
+        bind = SUPER, 9, exec, ~/.scripts/hyprland_move_ws 9
 
         # Move windows between workspaces
         bind = SUPER_SHIFT, 1, movetoworkspace, 1
