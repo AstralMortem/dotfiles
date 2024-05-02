@@ -26,7 +26,7 @@
         "custom/notifications",
         "tray",
         "hyprland/language",
-        "group/power"
+        "custom/power"
     ],
     "hyprland/workspaces": {
         "format": "{name}: {icon}",
@@ -39,11 +39,11 @@
             "active": "",
             "default": ""
         },
-           "persistent-workspaces": {
-                 "*": 5 // 5 workspaces by default on every monitor
-           }
+        "persistent-workspaces": {
+            "*": 5 // 5 workspaces by default on every monitor
+        }
     },
-    "hyprland/language":{
+    "hyprland/language": {
         "format": "{short}"
     },
     "network": {
@@ -196,53 +196,23 @@
         "interval": 2
     },
     "group/hardware": {
-		"orientation": "inherit",
+        "orientation": "inherit",
         "drawer": {
             "transition-duration": 500,
             "transition-left-to-right": true,
-            "children-class":"hardware-group"
-        },
-		"modules": [
-			"cpu",
-			"memory",
-			"temperature",
-            "disk"
-		]
-	},
-    "group/power": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 500,
-            "children-class": "not-power",
-            "transition-left-to-right": false
+            "children-class": "hardware-group"
         },
         "modules": [
-            "custom/lock",
-            "custom/reboot",
-            "custom/power",
-            "custom/quit"
-            
+            "cpu",
+            "memory",
+            "temperature",
+            "disk"
         ]
-    },
-    "custom/quit": {
-        "format": "󰗼",
-        "tooltip": false,
-        "on-click": "hyprctl dispatch exit"
-    },
-    "custom/lock": {
-        "format": "󰍁",
-        "tooltip": false,
-        "on-click": "hyprlock"
-    },
-    "custom/reboot": {
-        "format": "󰜉",
-        "tooltip": false,
-        "on-click": "reboot"
     },
     "custom/power": {
         "format": "",
         "tooltip": false,
-        "on-click": "shutdown now"
+        "on-click": "~/.config/wlogout/launch.sh"
     },
     "tray": {
         "icon-size": 15,
