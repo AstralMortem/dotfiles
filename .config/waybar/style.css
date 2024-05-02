@@ -50,6 +50,47 @@
 
 /* =============================== */
 
+/* =============================== */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 30%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient_f {
+  0% {
+    background-position: 0% 200%;
+  }
+
+  50% {
+    background-position: 200% 0%;
+  }
+
+  100% {
+    background-position: 400% 200%;
+  }
+}
+
+@keyframes gradient_f_nh {
+  0% {
+    background-position: 0% 200%;
+  }
+
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+
 
 /* =============================== */
 /* Bar Styling */
@@ -100,30 +141,35 @@
 }
 
 
-#workspaces button{
-    padding: 0 0.8em;
-    background-color: @surface3;
-    color: @mauve;
-    margin: 0.25em;
-    border-radius: 16px;
+#workspaces button {
+  padding: 0 0.8em;
+  background-color: @surface3;
+  color: @mauve;
+  margin: 0.25em;
+  border-radius: 16px;
 }
 
-#workspaces button.empty{
-    color: @overlay3;
+#workspaces button.empty {
+  color: @overlay3;
 }
 
-#workspaces button.visible{
-    color: @blue;
+#workspaces button.visible {
+  color: @blue;
 }
 
-#workspaces button.active{
-    color: @green;
+#workspaces button.active {
+  background: rgb(148, 226, 213);
+  background: linear-gradient(52deg, rgba(148, 226, 213, 1) 0%, rgba(137, 220, 235, 1) 19%, rgba(116, 199, 236, 1) 43%, rgba(137, 180, 250, 1) 56%, rgba(180, 190, 254, 1) 80%, rgba(186, 187, 241, 1) 100%);
+  background-size: 300% 300%;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  font-weight: bold;
+  color: #fff;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
-    border-radius: 1em;
-    color: @text;
+  background-color: @red;
+  border-radius: 1em;
+  color: @text;
 }
 
 
@@ -220,7 +266,7 @@
   padding-right: 5px;
 }
 
-#language{
+#language {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 5px;
@@ -240,7 +286,7 @@
   color: @blue;
 }
 
-#cpu:hover{
+#cpu:hover {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 0px;
@@ -278,62 +324,23 @@
 
 /* Power menu*/
 
-#custom-power{
+#custom-power {
   color: @red;
 }
 
-#custom-reboot{
+#custom-reboot {
   color: @blue;
 }
 
-#custom-lock{
+#custom-lock {
   color: @green;
 }
 
-#custom-quit{
+#custom-quit {
   color: @maroon;
 }
 
 
-/* =============================== */
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 30%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient_f {
-  0% {
-    background-position: 0% 200%;
-  }
-
-  50% {
-    background-position: 200% 0%;
-  }
-
-  100% {
-    background-position: 400% 200%;
-  }
-}
-
-@keyframes gradient_f_nh {
-  0% {
-    background-position: 0% 200%;
-  }
-
-  100% {
-    background-position: 200% 200%;
-  }
-}
 
 
 #custom-music.low {
