@@ -5,4 +5,4 @@ cp -rf ./config/* $HOME/.config/
 cp -rf ./scripts/* $HOME/.local/share/bin/
 
 # copy local
-cp -rf ./local/* $HOME/.local/
+# cp -rf ./local/* $HOME/.local/
